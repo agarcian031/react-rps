@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import OptionBox from './components/OptionBox';
+import GameLogic from './components/GameLogic'; 
 import {Container, Header, Divider, Grid} from 'semantic-ui-react'
 
 export class App extends Component {
@@ -11,7 +12,7 @@ export class App extends Component {
 
 // Handle user click option
   optionClick = (option) => {
-    this.setState({ userChoice: option, compChoice: this.randomChoice()})
+    this.setState({ userChoice: option, compChoice: this.randomChoice()}); 
   }; 
 
 
