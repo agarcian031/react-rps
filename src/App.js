@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import OptionBox from './components/OptionBox';
-import GameLogic from './components/GameLogic'; 
+// import GameLogic from './components/GameLogic'; 
+import Scoreboard from './components/Scoreboard';
 import {Container, Header, Divider, Grid} from 'semantic-ui-react'
 
 export class App extends Component {
@@ -27,6 +28,7 @@ export class App extends Component {
       <Container style={{marginTop: "15px", letterSpacing: "2px",}}>
         <Header textAlign="center" size="huge">Rock Paper Scissors</Header>
         <Divider/>
+        <Scoreboard/>
         <Grid columns="equal">
         <OptionBox optionClick={this.optionClick}/>
         </Grid>
