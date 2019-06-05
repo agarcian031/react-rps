@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import OptionBox from './components/OptionBox';
+import {Container, Header, Divider} from 'semantic-ui-react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export class App extends Component {
+  state = {userChoice: null, 
+  compChoice: null, 
+}; 
 
-export default App;
+  optionClick = () => {
+    debugger
+  }
+
+  render() {
+    return (
+      <Container style={{marginTop: "15px", letterSpacing: "2px",}}>
+        <Header textAlign="center" size="huge">Rock Paper Scissors</Header>
+        <Divider/>
+        <OptionBox name="rock" image={} optionClick={}/>
+      </Container>
+    )
+  };
+};
+
+export default App
+
