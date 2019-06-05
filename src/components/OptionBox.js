@@ -1,10 +1,14 @@
-import React from 'react'
-import {Image} from 'semantic-ui-react';
+import React from 'react';
+import { Image, Segment, } from 'semantic-ui-react';
 
-OptionBox = () => (
-  <Image src='/images/wireframe/image.png' size='small' />
-  // Then put the images in the app js
-  <Image src={props.img} size="small" onClick={() => props.optionClick(props.name)/>
-); 
+const OptionBox = (props) => (
+  <Segment circular style={{border: "solid 5px purple" }}>
+    <Image
+    size="small" 
+    src={props.image} 
+    onClick={ () => props.optionClick(props.name)} 
+    />
+  </Segment>
+);
 
-export default OptionBox; 
+export default OptionBox;
