@@ -1,30 +1,28 @@
 import React, { Fragment, Component } from 'react'
 import {Segment, Grid, Divider, Header, } from 'semantic-ui-react'
 
-export class Scoreboard extends Component {
-  render() {
-    return (
-      <Fragment>
+ const Scoreboard = ({ userScore, compScore}) => {
+  return (
+    <Fragment>
       <Segment>
       <Grid columns={2} textAlign='center'>
-        <Divider vertical></Divider>
+        <Divider vertical> : </Divider>
         <Grid.Row verticalAlign='middle'>
           <Grid.Column>
             <Header>
-              User: {this.props.userScore}
+              USER: {userScore}
             </Header>
           </Grid.Column>
           <Grid.Column>
             <Header>
-              Computer: {this.props.compScore}
+              COMP: {compScore}
             </Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
     </Fragment>
-    )
-  }
+  )
 }
 
-export default Scoreboard
+export default Scoreboard; 
