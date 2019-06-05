@@ -7,11 +7,21 @@ import {Container, Header, Divider, Grid} from 'semantic-ui-react'
 
 export class App extends Component {
   state = {userChoice: null, 
-  compChoice: null, 
+  compChoice: null,
+  userScore: 0, 
+  compScore: 0,  
 }; 
 
+// Handle user click option
   optionClick = () => {
     debugger
+  }
+
+
+  // Generate a random choice
+  randomChoice = () => {
+    const choices = ['rock', 'paper', 'scissors']; 
+    return choices[Math.floor(Math.random() * choices.length)]; 
   }
 
   render() {
