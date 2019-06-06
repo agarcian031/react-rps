@@ -8,17 +8,17 @@ const OptionBox = (props) => (
   <React.Fragment>
         <Grid.Column>
           <Segment circular style={{border: "solid 5px purple" }}>
-          <Image size="small" name="rock" src={rock} onClick={() => props.optionClick('rock')}/>
+          <Image size="tiny" name="rock" src={rock} onClick={() => props.optionClick('rock')}/>
           </Segment>
         </Grid.Column>
         <Grid.Column>
           <Segment circular style={{border: "solid 5px purple" }}>
-          <Image size="small" name="paper" src={paper} onClick={() => props.optionClick('paper')}/>
+          <Image size="tiny" name="paper" src={paper} onClick={() => props.optionClick('paper')}/>
           </Segment>
         </Grid.Column>
         <Grid.Column>
           <Segment circular style={{border: "solid 5px purple" }}>
-          <Image size="small" name="scissors" src={scissors} onClick={() => props.optionClick('scissors')}/>
+          <Image size="tiny" name="scissors" src={scissors} onClick={() => props.optionClick('scissors')}/>
           </Segment>
         </Grid.Column>
     </React.Fragment>

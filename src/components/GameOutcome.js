@@ -6,6 +6,8 @@ class GameOutcome extends React.Component {
     outcome: null, 
   };
 
+  
+
 
 
   render() {
